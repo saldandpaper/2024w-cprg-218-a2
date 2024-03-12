@@ -1,0 +1,10 @@
+.hero-container {
+    background-image: url(../assets/showcase-images/Screenshot_bkr_toyota_gr86_timeattack_shuto_revival_project_beta_24-7-122-22-35-44.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100dvh;
+
+    display: grid;
+    
+}

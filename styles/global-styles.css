@@ -1,0 +1,15 @@
+body {
+    color: #FFFFFFDB;
+    background-color: black;
+    font-family: "afacad", sans-serif;
+}
+
+h1 {
+    font-size: 30pt;
+    font-weight: bold;
+}
+
+p {
+    font-size: 12pt;
+    font-weight: normal;
+}
