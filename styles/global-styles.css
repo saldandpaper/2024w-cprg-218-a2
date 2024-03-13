@@ -19,6 +19,10 @@ h1 {
     font-weight: bold;
 }
 
+h2 {
+    font-size: var(--h2-font-size);
+}
+
 h4 {
     font-size: var(--h4-font-size);
 }
@@ -28,12 +32,12 @@ p {
     font-weight: normal;
 }
 
-@media screen and (max-width: 720pt) {
+@media screen and (max-width: 720px) {
     :root {
-        --h1-font-size: 30pt;
-        --h2-font-size: 25pt;
-        --h3-font-size: 20pt;
-        --h4-font-size: 15pt;
+        --h1-font-size: 2.7rem;
+        --h2-font-size: 2.4rem;
+        --h3-font-size: 2rem;
+        --h4-font-size: 1.2rem;
     }
 }
 
