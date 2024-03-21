@@ -47,11 +47,19 @@
     }
 }
 
-.content {
-    /* border: 1pt solid lime; */
+.container {
     margin: 3rem auto;
     height: fit-content;
     width: 90%;
+}
+
+.headers {
+    background-color: #7a4f9f60;
+    width: fit-content;
+}
+
+.content {
+    /* border: 1pt solid lime; */
     /* display: flex; */
     /* flex-direction: column; */
 
@@ -109,9 +117,6 @@
 }
 
 .cards {
-    margin: 3rem auto;
-    height: fit-content;
-    width: 90%;
 
     & h1{
         margin: 1rem;
@@ -154,6 +159,65 @@
     
             @media screen and (min-width: 720px) {
                 flex: 45%;
+            }
+        }
+    }
+}
+
+.accordions {
+    .accordion-container {
+        background-color: #7a4f9f60;
+        color: #fff;
+        height: fit-content;
+        width: 70dvw;
+        padding: 10pt;
+        display: flex;
+        flex-flow: column wrap;
+
+
+        & .accordion {
+            position: relative;
+            /* border: 1pt solid red; */
+            padding: 0;
+            display: flex;
+            flex-flow: column wrap;
+
+            & input {
+                /* border: 2px solid purple; */
+                position: absolute;
+                left: 0;
+                right: 0;
+                height: 100%;
+                width: 100%;
+                opacity: 0;
+                visibility: 0;
+            }
+
+            & h2 {
+                /* border: 1pt solid blue; */
+                background-color: #a381c2;
+                color: black;
+                margin: 0;
+                padding: 10pt;
+                cursor: pointer;
+                margin: 5pt;
+                transition: background-color 0.3s ease-in-out;
+            }
+
+            & p {
+                display: none;
+                margin: 5pt;
+                padding: 5pt;
+                background-color: #0000006f;
+                /* border: green 1pt solid; */
+            }
+            
+            & input:checked + h2 + p {
+                display: block;
+            }
+
+            & input:checked + h2 {
+                background-color: #bb6effcc;
             }
         }
     }
