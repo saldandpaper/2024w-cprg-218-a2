@@ -5,19 +5,19 @@
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
-    height: 100dvh;
+    height: 100vh;
 
     & div {
         /* border: 1pt solid lime; */
         position: absolute;
         bottom: calc(100vh - 90vh);
-        margin: 20pt;
+        margin: 2rem;
         border: 1pt solid #ffffff2b;
         box-shadow: 0 3pt 10pt #00000050;
 
         & h1, h4 {
             /* border: 1pt solid purple; */
-            -webkit-backdrop-filter: blur(15px); 
+            -webkit-backdrop-filter: blur(15pt); 
             backdrop-filter: blur(15pt);
             padding: 1rem;
             text-shadow: 0 0 10pt #0000009f;
@@ -31,4 +31,76 @@
             border-bottom: 1pt solid #ffffff3b;
         }
     }
+
+    & p {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        padding: 0.5rem;
+        opacity: 80%;
+        backdrop-filter: blur(15pt);
+        color: var(--color-text);
+        background-color: var(--color-textbox);
+        border-top: 1pt solid #FFFFFF3B;
+        border-left: 1pt solid #FFFFFF3B;
+        box-shadow: 0pt 0pt 10pt #0000009F;
+    }
+}
+
+.content {
+    /* border: 1pt solid lime; */
+    margin: 3rem auto;
+    height: fit-content;
+    width: 90%;
+    /* display: flex; */
+    /* flex-direction: column; */
+
+    & > * {
+        /* border: solid red 1px; */
+        display: auto;
+        margin: 1rem;
+    }
+
+    & .text-group {
+        /* border: blue solid 1px; */
+        /* width: 100%; */
+        
+        & h2 , p {
+            margin: 1rem;
+            margin-left: 0;
+            width: 100%;
+        }
+
+        & h2 {
+            background-color: #7a4f9f60;
+        }
+        & p {
+            line-height: 1.5rem;
+        }
+    }
+
+
+
+    & img {
+        width: 100%;
+    }
+
+    @media screen and (min-width: 720px){
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        & .text-group {
+            width: 50%;
+        }
+        & p {
+            /* border: 1pt solid lime; */
+            width: 100%;
+        }
+
+        & .image {
+            width: 50vw;
+        }
+    }
+
 }
