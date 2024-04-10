@@ -15,12 +15,16 @@
         border: 1pt solid #ffffff2b;
         box-shadow: 0 3pt 10pt #00000050;
 
-        & h1, h4 {
+        & h1, h2 {
             /* border: 1pt solid purple; */
             -webkit-backdrop-filter: blur(15pt); 
             backdrop-filter: blur(15pt);
             padding: 1rem;
             text-shadow: 0 0 10pt #0000009f;
+        }
+
+        & h2 {
+            font-size: var(--h4-font-size);
         }
 
         & h1 {
